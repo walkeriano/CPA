@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#6ba2ea" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="icon" type="image/png" href="./img/favicon.png"/>
+    <title>Como Pez en el Aula</title>
+  </head>
+
+  <body>
+    <div id="home" class="body">
+      <header class="header-sect">
+        <div class="left-head">
+          <img class="logo" src="./img/logo-cpa.svg" />
+          <div >
+            <p class="tittle-sec" >Disfruta de</p>
+            <p class="box-title" >tu vocación</p>
+          </div>
+          <h1>Disfruta de<br />tu vocación</h1>
+        </div>
+        <div class="right-head">
+          <img class="portada-of" src="./img/portada-of.png" />
+          <div class="icons">
+            <a href="/">
+              <img class="i-social" src="./img/logo-fb.svg" />
+            </a>
+            <a href="/">
+              <img class="i-social" src="./img/logo-ins.svg" />
+            </a>
+            <a href="/">
+              <img class="i-social" src="./img/logo-tk.svg" />
+            </a>
+            <a href="/">
+              <img class="i-social" src="./img/logo-yt.svg" />
+            </a>
+          </div>
+        </div>
+        <img class="bg-line" src="./img/line-bg.svg" />
+        <a class="btn-wss" ></a>
+      </header>
+      <main class="main-sections">
+        <section class="section-one">
+          <h2>
+            ¿Sabías qué más del 80% de escolares no saben qué carrera estudiar?
+          </h2>
+          <img class="portada-two" src="./img/portada-two.png" />
+          <div class="parche-box">
+            <img class="parche-text" src="./img/parche-text.png" />
+            <img class="parche-text-two" src="./img/parche-text-2.png" />
+          </div>
+          <canvas id="canvas"></canvas>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="liquid">
+                <!--important code : [blur + contrast] , contrast on alpha channel to prevent change color-->
+                <feGaussianBlur
+                  in="SourceGraphic"
+                  stdDeviation="10"
+                  result="blur"
+                />
+                <feColorMatrix
+                  in="blur"
+                  mode="matrix"
+                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 40 -10"
+                />
+              </filter>
+            </defs>
+          </svg>
+        </section>
+        <section class="section-two">
+          <div class="info-sectio-two">
+            <div class="text-info">
+              <h3>Somos un grupo de Psicólogos & Coaches Vocacionales</h3>
+              <p>
+                Con amplia experiencia trabajando con adolescentes y estudiantes
+                universitarios, que también se equivocaron en su elección.
+              </p>
+              <p>
+                Te ayudamos a cambiar los problemas académicos por un mar de
+                soluciones.
+              </p>
+            </div>
+            <img class="img-section-two" src="./img/bg-section-two.jpg" />
+          </div>
+          <img class="form-one" src="./img/form-one.png" />
+          <img class="form-two" src="./img/form-two.png" />
+          <img class="form-tre" src="./img/form-tre.png" />
+          <img class="form-for" src="./img/fomr-for.png" />
+        </section>
+        <section class="section-tre">
+          <img class="grafic-bg" src="./img/grafic-bg.png" />
+          <img class="grafic-bg-bot" src="./img/grafic-bg.png" />
+          <img class="titulo-section-tre" src="./img/titulo-section-tre.svg" />
+          <p>
+            Se centra en el la inmersión profunda del individuo para acompañarlo
+            en identificar sus talentos naturales y luego alinear, potenciar y
+            acelerar sus competencias.
+          </p>
+          <div class="display-circles">
+            <div class="circle">
+              <span>C</span>
+              <div class="circle-two"></div>
+              <div class="circle-tre"></div>
+            </div>
+            <div class="line">
+              <div class="mini-circle"></div>
+            </div>
+            <div class="circle">
+              <span>P</span>
+              <div class="circle-two"></div>
+              <div class="circle-tre"></div>
+            </div>
+            <div class="line">
+              <div class="mini-circle"></div>
+            </div>
+            <div class="circle">
+              <span>A</span>
+              <div class="circle-two"></div>
+              <div class="circle-tre"></div>
+            </div>
+          </div>
+          <div class="parche-last-cont">
+            <h4>
+              Buscamos contribuir con la gestión del talento de jóvenes
+              adolescentes para que puedan elegir su vocación alineada a sus
+              talentos naturales y puedan disfrutar su vida académica y
+              profesional.
+            </h4>
+            <img
+              class="parche-text-info"
+              src="./img/parche-text-complemento.png"
+            />
+          </div>
+        </section>
+        <section class="section-for">
+          <h5>¿Qué herramientas usamos?</h5>
+          <div class="section-herramientas">
+            <img class="logo-herramienta" src="./img/herramienta-one.jpg" />
+            <img class="logo-herramienta" src="./img/herramienta-two.jpg" />
+            <img class="logo-herramienta" src="./img/herramienta-tre.jpg" />
+          </div>
+        </section>
+      </main>
+      <footer class="section-foot">
+        <div class="info-fut">
+          <p class="titulo-fut">
+            Elegir la carrera quedó en el pasado.<br />descubrirla será un
+            proceso revelador.
+          </p>
+          <div class="flex-info-icon">
+            <a class="flex-link" href="/">
+              <img class="i-flex-fut" src="./img/i-contact-one.svg" />
+              <p>+34 639 40 56 34</p>
+            </a>
+            <a class="flex-link" href="/">
+              <img class="i-flex-fut" src="./img/i-contact-two.svg" />
+              <p>contacto@comopezenelaula.com</p>
+            </a>
+            <a class="flex-link" href="/">
+              <img class="i-flex-fut" src="./img/i-contact-tre.svg" />
+              <p>comopezenelaula.com</p>
+            </a>
+          </div>
+          <p class="cierre-copy">Copyright 2023 - España, Barcelona.</p>
+        </div>
+        <div class="section-logo">
+          <div class="content-right">
+            <img class="logo-fut" src="./img/logo-cpa.svg" />
+            <div class="icons-flex-fut">
+              <p>Encuéntranos en:</p>
+              <div class="socials-fut">
+                <a href="/">
+                  <img class="i-social-fut" src="./img/logo-fb.svg" />
+                </a>
+                <a href="/">
+                  <img class="i-social-fut" src="./img/logo-ins.svg" />
+                </a>
+                <a href="/">
+                  <img class="i-social-fut" src="./img/logo-tk.svg" />
+                </a>
+                <a href="/">
+                  <img class="i-social-fut" src="./img/logo-yt.svg" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,981 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+@font-face{
+    font-family:"made";
+    src: url(../fonts/Walkway_Black.otf)
+}
+
+/*
+GLOBALES
+*/
+
+.btn-wss{
+    width: 70px;
+    height: 70px;
+    border-radius:0px 0px 40px 40px;
+    background-color: red;
+    position: fixed;
+    right: 70px;
+    top: 0px;
+    z-index: 1;
+}
+
+.cont-effect{
+   width: 60%;
+}
+
+#canvas{
+    position: absolute;
+    filter: url("#liquid");
+    top: 100px;
+    width: 90%;
+    z-index: -3;
+}
+  
+
+
+.header-sect{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.bg-line{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+.left-head{
+    width: 50%;
+    height: 78%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding-left: 90px;
+}
+
+.logo{
+    width: 30%;
+}
+
+
+.tittle-sec{
+    font-family:"made";
+    text-transform: uppercase;
+    font-size:2.3rem;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    color: #606060;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.box-title{
+    font-family:"made";
+    text-transform: uppercase;
+    background-color: #3ec4f1;
+    color: white;
+    font-size: 2.8rem;
+    transform: rotate(-2deg);
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.left-head h1{
+    display: none;
+}
+
+.right-head{
+    width: 50%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.portada-of{
+    height: 100%;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+    margin-left: 25px;
+}
+
+.i-social{
+    width: 35px;
+    margin: 3px;
+}
+
+.main-sections{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-one{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+
+.section-one h2{
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: #ff204f;
+    width: 40%;
+    text-align: center;
+    font-family:"made";
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    margin-top: 100px;
+}
+
+.portada-two{
+    width: 48%;
+    z-index: -2;
+}
+
+.parche-box{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    margin-top: -15px;
+}
+
+
+.parche-text{
+    width: 50%;
+}
+
+.parche-text-two{
+    display: none;       
+}
+
+.section-two{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: -80px;
+}
+
+.info-sectio-two{
+    width: 70%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#ededed;
+    border-radius: 30px;
+}
+
+.text-info{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.text-info h3{
+    margin-bottom:10px;
+    font-size: 1.4rem;
+    width: 80%;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #606060;
+    font-weight: bold;
+    font-family:"made";
+    letter-spacing: 1px;
+}
+
+.text-info p{
+    width:85%;
+    margin-top: 20px;
+    line-height: 1.2;
+    color: #606060;
+    font-family:"made";
+    letter-spacing: 1px;
+}
+
+.img-section-two{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px 30px 30px 0px;
+}
+
+
+
+.form-one{
+    width: 150px;
+    position: absolute;
+    bottom: 10px;
+    left: 150px;
+    transform: rotate(25deg);
+    animation-name: form-one;
+    view-timeline-name:--form-one;
+    view-timeline-axis:block;
+    animation-timeline:--form-one;
+    animation-range: entry 20% cover 50%;
+}
+
+@keyframes form-one{
+    from {
+        bottom: 90px;
+        scale: 80%;
+        transform: rotate(-55deg);
+    }
+  
+    to {
+        bottom: 10px;
+        scale: 100%;
+        transform: rotate(25deg);
+    }
+}
+
+
+.form-two{
+    width: 200px;
+    position: absolute;
+    top: 40px;
+    right: 170px;
+    transform: rotate(5deg);
+    animation-name: form-two;
+    view-timeline-name:--form-two;
+    view-timeline-axis:block;
+    animation-timeline:--form-two;
+    animation-range: entry 10% cover 80%;
+}
+
+
+@keyframes form-two{
+    from {
+        top: -10px;
+        scale: 80%;
+        transform: rotate(-45deg);
+        
+    }
+  
+    to {
+        top: 40px;
+        scale: 100%;
+        transform: rotate(5deg);
+        
+    }
+}
+
+
+.form-tre{
+    width: 90px;
+    position: absolute;
+    bottom: 110px;
+    right: 370px;
+    transform: rotate(5deg);
+    animation-name: form-tre;
+    view-timeline-name:--form-tre;
+    view-timeline-axis:block;
+    animation-timeline:--form-tre;
+    animation-range: entry 10% cover 80%;
+}
+
+
+@keyframes form-tre{
+    from {
+        bottom: 160px;
+        scale: 80%;
+        transform: rotate(85deg);
+        right: 300px;
+    }
+  
+    to {
+        bottom: 110px;
+        scale: 100%;
+        transform: rotate(5deg);
+        right: 370px;
+    }
+}
+
+
+.form-for{
+    width: 100px;
+    position: absolute;
+    top: 90px;
+    left: 400px;
+    transform: rotate(5deg);
+    animation-name: form-for;
+    view-timeline-name:--form-for;
+    view-timeline-axis:block;
+    animation-timeline:--form-for;
+    animation-range: entry 10% cover 50%;
+}
+
+
+@keyframes form-for{
+    from {
+        top: 0px;
+        scale: 80%;
+        transform: rotate(45deg);
+        left: 300px;
+    }
+  
+    to {
+        top: 90px;
+        scale: 100%;
+        transform: rotate(5deg);
+        left: 400px;
+    }
+}
+
+
+.section-tre{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 30px;
+    background-color: #75b7d1;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.grafic-bg{
+    width: 100%;
+    position: absolute;
+    top: -100px;
+    z-index: -1;
+}
+
+.grafic-bg-bot{
+    width: 100%;
+    position: absolute;
+    bottom: -105px;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+
+
+
+.titulo-section-tre{
+    width: 25%;
+    margin-bottom: 40px;
+}
+
+.section-tre p{
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 70px;
+    font-family:"made";
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.display-circles{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: white;
+    font-size:1.7rem;
+    position: relative;
+}
+
+.circle-two{
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: white;
+    font-size:1.5rem;
+    position: absolute;
+    top: -25px;
+    animation-name: slide-two ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide-two {
+    0% {
+        top: 0px;
+        opacity: 0;
+    }
+  
+    50% {
+        top: -25px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 0;
+    }
+}
+
+.circle-tre{
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: white;
+    font-size:1.5rem;
+    position: absolute;
+    bottom: -25px;
+    animation-name: slide-one;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes slide-one {
+    0% {
+      bottom: 0px;
+      opacity: 0;
+    }
+  
+    50% {
+        bottom: -25px;
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 0px;
+        opacity: 0;
+    }
+}
+
+
+
+.line{
+    width: 60px;
+    height: 2px;
+    background-color:white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.mini-circle{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 30px;
+    animation-name: movein;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movein {
+    0% {
+        margin-left: -30px;
+      
+    }
+  
+    50% {
+        margin-left: 30px;
+        
+    }
+
+    100% {
+        margin-left: -30px;
+    }
+}
+
+.parche-last-cont{
+    width: 650px;
+    height:160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -140px;
+    z-index: 2;
+}
+
+.parche-last-cont h4{
+    width: 80%;
+    font-size:1.2rem;
+    text-align: center;
+    line-height: 1.1;
+    font-family:"made";
+    letter-spacing: 1px;
+}
+
+.parche-text-info{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+}
+
+.section-for{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-for h5{
+    font-size:1.3rem;
+    color: #606060;
+    margin-bottom: 30px;
+    font-family:"made";
+}
+
+.section-herramientas{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-herramienta{
+    width: 200px;
+}
+
+
+.section-foot{
+    width: 100%;
+    height: 300px;
+    background-color:#fee608;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info-fut{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    
+    
+}
+
+.titulo-fut{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #303030;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    font-family:"made";
+}
+
+.flex-info-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:center;
+    margin-bottom: 20px;
+}
+
+.cierre-copy{
+    color: #303030;
+    border-bottom: 1px solid #303030;
+    font-size: 0.9rem;
+    font-family:"made";
+}
+
+.flex-link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-link p{
+    color: #303030;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    font-family:"made";
+}
+
+.i-flex-fut{
+    width: 30px;
+    margin: 5px;
+}
+
+.section-logo{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;  
+      
+}
+
+.content-right{
+    width: 60%;
+    height: 90%;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-fut{
+    width: 55%;
+    margin-bottom: 30px;
+}
+
+
+.icons-flex-fut{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-flex-fut p{
+    font-size: 0.9rem;
+    color: #606060;
+    margin-bottom:15px;
+    font-family:"made";
+}
+
+.socials-fut{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.i-social-fut{
+    width: 35px;
+}
+
+@media screen and (max-width:800px){
+
+
+    .header-sect{
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    
+    .left-head{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-left: 0px;
+        border: 1px solid ;
+    }
+
+    .logo{
+        width: 45%;
+        
+    }
+
+    .tittle-sec{
+        font-size:1.8rem;
+        text-align: center;
+        margin-bottom: 5px;
+        margin-left: 0px;
+    }
+    
+    .box-title{
+        font-size: 2.0rem;
+        padding: 2px 5px;
+        border-radius: 5px;
+        letter-spacing: 1.5px;
+    }
+
+    .right-head{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        border: 1px solid;
+    }
+
+    .portada-of{
+        height: 85%;
+    }
+
+    .icons{
+        flex-direction: row;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .i-social{
+        width: 50px;
+        margin: 10px;
+    }
+
+    .bg-line{
+        display:none;
+    }
+
+    .btn-wss{
+       display: none;
+    }
+
+    .section-one{
+        height: 1000px;
+    }
+
+    .section-one h2{
+        font-size: 2.2rem;
+        width: 70%;
+        margin-top: 80px;
+    }
+
+    .portada-two{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        margin-top: 30px;
+    }
+    
+    .parche-text{
+        display: none;
+    }
+
+    .parche-text-two{
+        display: block;
+        width: 100%;
+    }
+
+    #canvas{
+        top: 20px;
+    }
+
+    .section-two{
+        height: 800px;
+        margin-top: 0px;
+        border: 1px solid;
+    }
+
+    .info-sectio-two{
+        width: 80%;
+        height: 700px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        border-radius: 30px;
+        position: relative;
+    }
+
+    .text-info{
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+        
+    }
+
+    .text-info h3{
+        margin-bottom:10px;
+        font-size: 1.2rem;
+        width: 90%;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    
+    .text-info p{
+        width:80%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .img-section-two{
+        width: 100vw;
+        height: 50%;
+        object-fit: cover;
+        border-radius: 0px 0px 0px 0px;
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .form-one{
+        width: 150px;
+        position: absolute;
+        bottom: -90px;
+        left: 20px;
+        transform: rotate(25deg);
+        animation-name: form-one;
+        view-timeline-name:--form-one;
+        view-timeline-axis:block;
+        animation-timeline:--form-one;
+        animation-range: entry 5% cover 80%;
+    }
+    
+    @keyframes form-one{
+        from {
+            bottom: 0px;
+            scale: 50%;
+            transform: rotate(-55deg);
+        }
+      
+        to {
+            bottom: -90px;
+            scale: 100%;
+            transform: rotate(25deg);
+        }
+    }
+
+    .form-two{
+        width: 180px;
+        position: absolute;
+        top: -30px;
+        right: 20px;
+        transform: rotate(5deg);
+        animation-name: form-two;
+        view-timeline-name:--form-two;
+        view-timeline-axis:block;
+        animation-timeline:--form-two;
+        animation-range: entry 10% cover 80%;
+    }
+    
+    
+    @keyframes form-two{
+        from {
+            top: -150px;
+            scale: 80%;
+            transform: rotate(-45deg);
+            
+        }
+      
+        to {
+            top: -30px;
+            scale: 100%;
+            transform: rotate(5deg);
+            
+        }
+    }
+
+    .form-tre{
+        width: 90px;
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+        transform: rotate(5deg);
+        animation-name: form-tre;
+        view-timeline-name:--form-tre;
+        view-timeline-axis:block;
+        animation-timeline:--form-tre;
+        animation-range: entry 10% cover 50%;
+    }
+    
+    
+    @keyframes form-tre{
+        from {
+            bottom: 60px;
+            scale: 80%;
+            transform: rotate(85deg);
+            right: 0px;
+        }
+      
+        to {
+            bottom: 20px;
+            scale: 100%;
+            transform: rotate(5deg);
+            right: 40px;
+        }
+    }
+
+    .form-for{
+        width: 70px;
+        position: absolute;
+        top: 150px;
+        left: 10px;
+        transform: rotate(-85deg);
+        animation-name: form-for;
+        view-timeline-name:--form-for;
+        view-timeline-axis:block;
+        animation-timeline:--form-for;
+        animation-range: entry 10% cover 50%;
+    }
+    
+    
+    @keyframes form-for{
+        from {
+            top: 100px;
+            scale: 60%;
+            transform: rotate(45deg);
+            left: 0px;
+        }
+      
+        to {
+            top: 150px;
+            scale: 100%;
+            transform: rotate(-85deg);
+            left: 10px;
+        }
+    }
+    
+}
