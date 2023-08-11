@@ -15,19 +15,44 @@ GLOBALES
 */
 
 .btn-wss{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 100px;
     border-radius:0px 0px 40px 40px;
-    background-color: red;
+    background-color: #00d676;
     position: fixed;
-    right: 70px;
+    right: 100px;
     top: 0px;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.cont-effect{
-   width: 60%;
+.btn-wss p{
+    color: white;
+    font-size:0.7rem;
+    font-family: "made";
+    letter-spacing: 0.5px;
 }
+
+.logo-wss{
+    margin-top: 5px;
+    width: 55%;
+}
+
+.active{
+    width: 13px;
+    height: 13px;
+    border-radius:50%;
+    border: 2px solid white;
+    background-color:#00d676;
+    position: absolute;
+    bottom: 2px;
+    right: 7px;
+}
+
+
 
 #canvas{
     position: absolute;
@@ -802,13 +827,33 @@ GLOBALES
     .bg-line-two{
         display:block;
         position: absolute;
-        top: 350px;
+        top: 290px;
         width: 100%;
         z-index: -1;
     }
 
     .btn-wss{
-       display: none;
+       position: fixed;
+       right: 0px;
+       top: 0px;
+       border-radius: 0px 0px 0px 20px;
+       width: 60px;
+       height: 70px;
+       z-index: 3;
+    }
+
+    .btn-wss p{
+        display: none;
+    }
+
+    .logo-wss{
+        margin-top: 0px;
+        width: 65%;
+    } 
+
+    .active{
+        bottom: -7px;
+        right: 20px;
     }
 
     .section-one{
@@ -816,7 +861,7 @@ GLOBALES
     }
 
     .section-one h2{
-        font-size: 2.2rem;
+        font-size: 2.0rem;
         width: 70%;
         margin-top: 80px;
     }
@@ -838,12 +883,12 @@ GLOBALES
     }
 
     #canvas{
-        top: 20px;
+        top: 80px;
     }
 
     .section-two{
         height: 800px;
-        margin-top: 0px;
+        margin-top: -30px;
     }
 
     .info-sectio-two{
@@ -1022,7 +1067,7 @@ GLOBALES
     }
 
     .titulo-section-tre{
-        width: 70%;
+        width: 75%;
         margin-bottom: 40px;
     }
 
@@ -1137,34 +1182,34 @@ GLOBALES
 
     .parche-last-cont{
         width: 100%;
-        height:270px;
-        bottom: -160px;
+        height:290px;
+        bottom: -200px;
     }
 
     .parche-last-cont h4{
         width: 80%;
-        font-size:1.3rem;
+        font-size:1.2rem;
         line-height: 1.2;
     }
     
     .parche-text-info{
         position: absolute;
         width: 100%;
-        height:270px;
+        height:290px;
         object-fit: cover;
         z-index: -1;
         top: 0px;
     }
 
     .section-for{
-        height: 700px;
+        height: 900px;
         
     }
     
     .section-for h5{
-        font-size:1.5rem;
-        margin-top: 60px;
-        margin-bottom: 40px;
+        font-size:1.3rem;
+        margin-top: 100px;
+        margin-bottom: 20px;
         
     }
 
@@ -1180,7 +1225,7 @@ GLOBALES
 
     .section-foot{
         width: 100%;
-        height: 1000px;
+        height: 1100px;
         background-color:#fee608;
         border-radius: 50px 50px 0px 0px;
         flex-direction: column;
@@ -1194,7 +1239,7 @@ GLOBALES
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     .section-logo{
@@ -1203,16 +1248,16 @@ GLOBALES
     }
 
     .titulo-fut{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         text-align: center;
         width: 90%;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
         letter-spacing: 1.5px;
     }
 
     .flex-info-icon{
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 
     .flex-link{
@@ -1221,7 +1266,7 @@ GLOBALES
     }
 
     .flex-link p{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         margin-left: 0px;
     }
     
@@ -1231,7 +1276,7 @@ GLOBALES
     }
 
     .content-right{
-        width: 85%;
+        width: 90%;
         height: 100%;
         border-radius: 40px 40px 0px 0px;
     }
@@ -1245,7 +1290,7 @@ GLOBALES
     }
 
     .socials-fut{
-        width: 80%;
+        width: 90%;
     }
     
     .i-social-fut{
@@ -1253,9 +1298,79 @@ GLOBALES
     }
 
     .cierre-copy{
-        font-size: 1.1rem;
+        font-size: 1.0rem;
     }
 
     
     
+}
+
+@media screen and (min-width: 1600px){
+    
+    .logo{
+        width:25%;
+    }
+
+    .tittle-sec{
+        font-size:2.8rem;
+        margin-bottom: 15px;
+    }
+
+    .box-title{
+        font-size: 3.5rem;
+    }
+    
+    .section-one{
+        height: 1000px;
+    }
+
+    .section-one h2{
+        width: 50%;
+    }
+
+    .portada-two{
+        width: 35%;
+    }
+
+    .parche-box{
+        margin-top: -30px;
+    }
+
+    .parche-text{
+        width: 40%;
+    }
+
+    .form-one{
+        width: 220px;
+    }
+
+    .form-two{
+        width: 270px;
+    }
+
+    .form-tre{
+        width: 130px;
+    }
+
+    .form-for{
+        width: 130px;
+    }
+
+    .section-tre{
+        height: 600px;
+        margin-top: 90px;
+    }
+
+    .grafic-bg{
+        top: -155px;
+    }
+
+    .grafic-bg-bot{
+        bottom: -150px;
+    }
+
+    .parche-last-cont{
+        bottom: -180px;
+    }
+
 }
