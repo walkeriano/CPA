@@ -55,7 +55,9 @@ GLOBALES
     z-index: -1;
 }
 
-
+.bg-line-two{
+    display: none;
+}
 
 .left-head{
     width: 50%;
@@ -366,7 +368,7 @@ GLOBALES
 
 .section-tre{
     width: 100%;
-    height: 500px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -427,9 +429,32 @@ GLOBALES
     display: flex;
     align-items: center;
     justify-content:center;
+    position: relative;
     color: white;
     font-size:1.7rem;
-    position: relative;
+}
+
+
+.text-circle{
+    position: absolute;
+    bottom:-140px;
+    font-family:"made";
+    left: 18px;
+    
+}
+
+.text-circle-two{
+    position: absolute;
+    bottom:-140px;
+    font-family:"made";
+    left: -25px;
+}
+
+.text-circle-tre{
+    position: absolute;
+    bottom:-140px;
+    font-family:"made";
+    left: -45px;
 }
 
 .circle-two{
@@ -440,8 +465,6 @@ GLOBALES
     display: flex;
     align-items: center;
     justify-content:center;
-    color: white;
-    font-size:1.5rem;
     position: absolute;
     top: -25px;
     animation-name: slide-two ;
@@ -474,8 +497,6 @@ GLOBALES
     display: flex;
     align-items: center;
     justify-content:center;
-    color: white;
-    font-size:1.5rem;
     position: absolute;
     bottom: -25px;
     animation-name: slide-one;
@@ -728,7 +749,7 @@ GLOBALES
         align-items: center;
         justify-content: space-evenly;
         padding-left: 0px;
-        border: 1px solid ;
+
     }
 
     .logo{
@@ -757,7 +778,6 @@ GLOBALES
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        border: 1px solid;
     }
 
     .portada-of{
@@ -777,6 +797,14 @@ GLOBALES
 
     .bg-line{
         display:none;
+    }
+
+    .bg-line-two{
+        display:block;
+        position: absolute;
+        top: 350px;
+        width: 100%;
+        z-index: -1;
     }
 
     .btn-wss{
@@ -816,7 +844,6 @@ GLOBALES
     .section-two{
         height: 800px;
         margin-top: 0px;
-        border: 1px solid;
     }
 
     .info-sectio-two{
@@ -977,5 +1004,258 @@ GLOBALES
             left: 10px;
         }
     }
+
+
+    .section-tre{
+        height: 900px;
+        padding-top: 50px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .grafic-bg{
+        top: -40px;
+    }
+
+    .grafic-bg-bot{
+        display: none;
+    }
+
+    .titulo-section-tre{
+        width: 70%;
+        margin-bottom: 40px;
+    }
+
+    .section-tre p{
+        width: 80%;
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        line-height: 1.3;
+        letter-spacing: 2px;
+    }
+
+    .display-circles{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+        height: 350px;
+        overflow: auto;
+        padding-right: 30px;
+    }
+
+    ::-webkit-scrollbar {display: none;}
+
+    .circle{
+        min-width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-left: 50px;
+        margin-right: 40px;
+        
+    }
+
+    .text-circle{
+        position: absolute;
+        bottom:-110px;
+        font-family:"made";
+        left: 18px;
+    }
+    
+    .text-circle-two{
+        position: absolute;
+        bottom:-110px;
+        font-family:"made";
+        left: -25px;
+    }
+    
+    .text-circle-tre{
+        position: absolute;
+        bottom:-110px;
+        font-family:"made";
+        left: -55px;
+    }
+
+    .circle-two{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: -50px;
+        animation-name: slide-two ;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes slide-two {
+        0% {
+            top: 0px;
+            opacity: 0;
+        }
+      
+        50% {
+            top: -50px;
+            opacity: 1;
+        }
+    
+        100% {
+            top: 0px;
+            opacity: 0;
+        }
+    }
+
+    .circle-tre{
+        width: 150px;
+        height: 150px;
+        bottom: -50px;
+        animation-name: slide-one;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    
+    
+    @keyframes slide-one {
+        0% {
+          bottom: 0px;
+          opacity: 0;
+        }
+      
+        50% {
+            bottom: -50px;
+            opacity: 1;
+        }
+    
+        100% {
+            bottom: 0px;
+            opacity: 0;
+        }
+    }
+
+    .line{
+        min-width: 70px;
+    }
+    
+
+    .parche-last-cont{
+        width: 100%;
+        height:270px;
+        bottom: -160px;
+    }
+
+    .parche-last-cont h4{
+        width: 80%;
+        font-size:1.3rem;
+        line-height: 1.2;
+    }
+    
+    .parche-text-info{
+        position: absolute;
+        width: 100%;
+        height:270px;
+        object-fit: cover;
+        z-index: -1;
+        top: 0px;
+    }
+
+    .section-for{
+        height: 700px;
+        
+    }
+    
+    .section-for h5{
+        font-size:1.5rem;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        
+    }
+
+    .section-herramientas{
+        width: 100%;
+        height: 65%;
+        flex-direction: column;
+    }
+
+    .logo-herramienta{
+        width: 220px;
+    }
+
+    .section-foot{
+        width: 100%;
+        height: 1000px;
+        background-color:#fee608;
+        border-radius: 50px 50px 0px 0px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-fut{
+        width: 80%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-logo{
+        width: 90%;
+        height: 30%; 
+    }
+
+    .titulo-fut{
+        font-size: 1.5rem;
+        text-align: center;
+        width: 90%;
+        margin-bottom: 30px;
+        letter-spacing: 1.5px;
+    }
+
+    .flex-info-icon{
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .flex-link{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .flex-link p{
+        font-size: 1.3rem;
+        margin-left: 0px;
+    }
+    
+    .i-flex-fut{
+        width: 70px;
+        margin: 10px;
+    }
+
+    .content-right{
+        width: 85%;
+        height: 100%;
+        border-radius: 40px 40px 0px 0px;
+    }
+
+    .logo-fut{
+        width: 65%;
+    }
+
+    .icons-flex-fut p{
+        font-size: 1.1rem;
+    }
+
+    .socials-fut{
+        width: 80%;
+    }
+    
+    .i-social-fut{
+        width: 50px;
+    }
+
+    .cierre-copy{
+        font-size: 1.1rem;
+    }
+
+    
     
 }
